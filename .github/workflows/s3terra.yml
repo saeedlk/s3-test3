@@ -24,7 +24,7 @@ jobs:
       - name: Terraform Apply
         id:   apply
         env:
-          TF_VAR_s3_name:  "${{ github.event.inputs.s3-bucket-name }}"
+          TF_VAR_s3_name:  "${{ github.event.inputs.s3_bucket_name }}"
         run: |
           terraform init
           terraform validate
